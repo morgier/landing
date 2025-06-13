@@ -5,12 +5,15 @@
 }
 /*=========Body=============================================*/
 
-body {
-    height: 100vh;
- background-image: url('phone.jpg'); /* путь к твоему файлу */
-  background-size: cover;       /* растягивает картинку на весь экран */
-  background-position: left center;;  /* выравнивает по центру */
-  background-repeat: no-repeat; /* не повторяет картинку */
+html, body {
+  height: 100%;
+  background-image: url('phone.jpg');
+  background-size: cover; /* или contain, если надо */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* чтобы фон "приклеился" */
+  background-position: center;
+  margin: 0;
+  padding: 0;
 }
 
 
