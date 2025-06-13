@@ -71,9 +71,7 @@ li {
 
 
 /*=========Showcase=============================================*/
-.showcase {
-border-bottom: solid 1px #E6E6E6;
-}
+
 .h1_social {
 font-family: Arial, Helvetica, sans-serif;
   text-align: center
@@ -81,7 +79,7 @@ font-family: Arial, Helvetica, sans-serif;
 }
 .button-wrapper {
   
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   padding-bottom: 20px;
   border-bottom: 1px solid #E6E6E6;
