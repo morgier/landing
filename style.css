@@ -1,0 +1,154 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*=========Body=============================================*/
+
+body {
+    height: 100vh;
+   
+  
+  
+  background: #dd2be0;
+  background: radial-gradient(circle, rgba(221, 43, 224, 1) 44%, rgba(122, 69, 246, 1) 81%);
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style-type: none;
+}
+/*=========Header=============================================*/
+._container, .button-wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    min-height: 90px;
+    align-items: center;
+    border-bottom: solid 1px #E6E6E6;
+   
+}
+.header_logo {
+    
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    font-family: fantasy;
+}
+
+
+
+
+
+
+
+
+.tiktok{
+
+     font-size: 40px;
+    display: flex;
+    align-items: center
+
+}
+
+
+
+/*=========Showcase=============================================*/
+.showcase {
+border-bottom: solid 1px #E6E6E6;
+}
+.h1_social {
+font-family: Arial, Helvetica, sans-serif;
+  text-align: center
+  
+}
+.button-wrapper {
+  
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.button-list {
+ list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+ align-items: stretch;
+  width: 100%; /* обязательно */
+  max-width: 1200px; /* если нужно */
+}
+
+.transparent-button {
+    display: inline-flex;          /* флекс-контейнер для текста */
+  justify-content: center;       /* центрируем текст по горизонтали */
+  align-items: center;           /* центрируем текст по вертикали */
+ width: 100%;
+  height: 100px; 
+  max-width: 1200px;                 /* одинаковая ширина */
+                  /* одинаковая высота (можно изменить) */
+
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  backdrop-filter: blur(5px);
+ font-family: 'Libre Franklin', sans-serif;
+  font-size: 30px;
+}
+
+.transparent-button:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.transparent-button i {
+  margin-right: 10px; /* отступ справа от иконки */
+  font-size: 30px;
+}
+
+/* Адаптив для экранов <= 768px (планшеты и телефоны) */
+@media (max-width: 768px) {
+  .button-wrapper {
+    width: 90%;          /* занимать 90% ширины экрана */
+    padding-bottom: 15px;
+  }
+
+  .transparent-button {
+    width: 100%;         /* растягиваем кнопку на всю ширину контейнера */
+    height: 70px;        /* чуть меньше высота */
+    font-size: 22px;     /* уменьшаем размер шрифта */
+  }
+
+  .button-list {
+    gap: 25px;           /* уменьшаем отступ между кнопками */
+  }
+}
+
+/* Дополнительная оптимизация для очень маленьких экранов <= 400px */
+@media (max-width: 400px) {
+  .transparent-button {
+    height: 60px;
+    font-size: 18px;
+  }
+
+  .transparent-button i {
+    font-size: 24px;
+  }
+}
