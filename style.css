@@ -3,19 +3,14 @@
 *::after {
   box-sizing: border-box;
 }
-@font-face {
-  font-family: 'TT';
-  src: url('TikTokDisplay-Bold') format('truetype');
-}
 /*=========Body=============================================*/
 
 body {
     height: 100vh;
-   
-  
-  
-  background: #dd2be0;
-  background: radial-gradient(circle, rgba(221, 43, 224, 1) 44%, rgba(122, 69, 246, 1) 81%);
+ background-image: url('phone.jpg'); /* путь к твоему файлу */
+  background-size: cover;       /* растягивает картинку на весь экран */
+  background-position: left center;;  /* выравнивает по центру */
+  background-repeat: no-repeat; /* не повторяет картинку */
 }
 
 
@@ -23,18 +18,18 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 li {
     list-style-type: none;
 }
 /*=========Header=============================================*/
-._container, .button-wrapper {
-  max-width: 1200px;
+._container {
+ max-width: 1200px;
   width: 90%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 15px;  /* боковые отступы */
 }
 
 .header_container {
@@ -50,7 +45,7 @@ li {
     font-size: 50px;
     font-weight: 300;
     letter-spacing: 1px;
-    font-family: 'TT', sans-serif;
+    font-family: monospace;
 }
 
 
@@ -73,16 +68,22 @@ li {
 /*=========Showcase=============================================*/
 
 .h1_social {
+  color: #ffffff;
 font-family: Arial, Helvetica, sans-serif;
   text-align: center
+  
   
 }
 .button-wrapper {
   
-  width: 100%;
-  margin: 0 auto;
-  padding-bottom: 20px;
   border-bottom: 1px solid #E6E6E6;
+  padding-bottom: 2px;
+}
+.button-wrapper2 {
+  
+  border-bottom: 1px solid #E6E6E6;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .button-list {
@@ -93,17 +94,17 @@ font-family: Arial, Helvetica, sans-serif;
   gap: 40px;
  align-items: stretch;
   width: 100%; /* обязательно */
-  max-width: 1200px; /* если нужно */
+  max-width: 1200px; 
 }
 
 .transparent-button {
-    display: inline-flex;          /* флекс-контейнер для текста */
-  justify-content: center;       /* центрируем текст по горизонтали */
-  align-items: center;           /* центрируем текст по вертикали */
+    display: inline-flex;          
+  justify-content: center;      
+  align-items: center;           
  width: 100%;
   height: 100px; 
-  max-width: 1200px;                 /* одинаковая ширина */
-                  /* одинаковая высота (можно изменить) */
+  max-width: 1200px;                
+                  
 
   background-color: rgba(255, 255, 255, 0.1);
   color: white;
@@ -124,16 +125,102 @@ font-family: Arial, Helvetica, sans-serif;
   margin-right: 10px; /* отступ справа от иконки */
   font-size: 30px;
 }
+/*=========Showcase2=============================================*/
+.showcase2 {
+  display: flex;
+  flex-direction: column; 
+  gap: 30px;
+  padding-top: 35px;
+}
+
+
+.mod-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Текст */
+.mod-text {
+  color: #ffffff;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 30px;
+}
+
+.mod-guide {
+color: #ffffff;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 20px;
+}
+
+
+/* Кнопка */
+.mods {
+  width: 500px; 
+  padding: 20px 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  backdrop-filter: blur(5px);
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  display: inline-block;
+}
+
+.img-flex {
+  display: flex;
+  justify-content: center; /* по горизонтали */
+  align-items: center;     /* по вертикали */
+  height: 150px;   
+     
+}
+
+.img-guide{
+ 
+width: 500px;            /* или % от родителя (например, 80%) */
+  height: auto;            /* сохраняет пропорции */
+  border-radius: 10px;     /* скругление углов */
+  object-fit: cover; 
+}
+
+
+
+
+
 
 /* Адаптив для экранов <= 768px (планшеты и телефоны) */
 @media (max-width: 768px) {
+ 
+  .mod-item {
+    flex-direction: column; /* вертикально: текст, потом кнопка */
+    align-items: flex-start; /* выравниваем текст и кнопку по левому краю */
+  }
+
+  .mods {
+    width: 100%; /* кнопка на всю ширину блока */
+    max-width: none;
+    font-size: 24px;
+  }
+
+  .mod-text {
+    font-size: 24px;
+    margin-bottom: 10px; /* небольшой отступ между текстом и кнопкой */
+  }
+   body {
+    background-position: left center; /* Телефоны — показать левую часть */
+  }
   .button-wrapper {
-    width: 90%;          /* занимать 90% ширины экрана */
-    padding-bottom: 15px;
+     padding: 0 15px 20px; /* сохранить боковые паддинги + паддинг снизу */
+  border-bottom: 1px solid #E6E6E6;
   }
 
   .transparent-button {
-    width: 100%;         /* растягиваем кнопку на всю ширину контейнера */
+           /* растягиваем кнопку на всю ширину контейнера */
     height: 70px;        /* чуть меньше высота */
     font-size: 22px;     /* уменьшаем размер шрифта */
   }
@@ -141,16 +228,17 @@ font-family: Arial, Helvetica, sans-serif;
   .button-list {
     gap: 25px;           /* уменьшаем отступ между кнопками */
   }
+  
 }
 
 /* Дополнительная оптимизация для очень маленьких экранов <= 400px */
 @media (max-width: 400px) {
   .transparent-button {
-    height: 60px;
-    font-size: 18px;
+    height: 70px;
+    font-size: 22px;
   }
 
   .transparent-button i {
-    font-size: 24px;
+    font-size: 25px;
   }
 }
