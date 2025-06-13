@@ -11,7 +11,7 @@ html, body {
   background-size: cover; /* или contain, если надо */
   background-repeat: no-repeat;
   background-attachment: fixed; /* чтобы фон "приклеился" */
-  background-position: center;
+   background-position: left center;
   margin: 0;
   padding: 0;
 }
