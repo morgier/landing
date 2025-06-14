@@ -10,16 +10,18 @@
 <body class="body">
     <!--=========Header==============================================================================-->            
             <header >
-                <div class=" _container">
-                    <div class="header_container">
-                    <a href="https://www.tiktok.com/@endorf1in?is_from_webapp=1&sender_device=pc" class="header_logo " >
-                        ENDORF1IN
-                    </a> 
-                                     
-                    <nav >
+                <div class=" _container header_container">
+                    
+                    <a href="https://www.tiktok.com/@endorf1in?is_from_webapp=1&sender_device=pc" class="header_logo " >ENDORF1IN</a> 
+                    <button class="nav-toggle" aria-label="Открыть меню">
+                      ☰
+                    </button>               
+                    <nav class="main-nav">
+                         <a href="index.html">Главная</a>
+                         <a href="mods.html">Моды</a>                        
                          <a href="https://www.tiktok.com/@endorf1in?is_from_webapp=1&sender_device=pc" class="tiktok"><i class="fab fa-tiktok"></i></a>
                     </nav>
-                    </div>
+                    
                 </div>
             </header>
       <!--=========Showcase1==============================================================================-->
@@ -29,42 +31,26 @@
         <ul class="button-list">
             <li><a href="https://discord.gg/qShtZWXE" class="transparent-button"  target="_blank"><i class="fab fa-discord"></i>Discord</a></li>
             <li><a href="https://t.me/endorf1in" class="transparent-button" target="_blank"><i class="fab fa-telegram"></i>Telegram</a></li>
-            <li><a href="https://www.twitch.tv/endorf1ln" class="transparent-button" " target="_blank"><i class="fab fa-twitch"></i>Twitch</a></li>
+            <li><a href="https://www.twitch.tv/endorf1ln" class="transparent-button"  target="_blank"><i class="fab fa-twitch"></i>Twitch</a></li>
             
       <div class="button-wrapper">
     <!-- нижний бордер -->
       </div>
   </div>
-            <li><a class="transparent-button" style="text-align: center;" target="_blank"><i class="fas fa-hammer"></i>Ip сервера (1.21.4): endorf1in.aboba.host </a></li>
+            <li><a href="#" class="transparent-button js-copy" data-copy="endorf1in.aboba.host" style="text-align: center;" ><i class="fas fa-hammer"></i> <span class="copy-text">Ip сервера 1.21.4: endorf1in.aboba.host (Тык что бы скопировать) </span></a></li>
         </ul>
     </div>    
 </div>
     
 <!--=========Showcase2==============================================================================-->
-<div class="_container showcase2">
-
-  <div class="mod-item">
-    <div class="mod-text">Моды сервера для Fabric 1.21.4</div>
-    <a href="Fabric.rar" class="mods" download>Скачать</a>
-  </div>
-
-  <div class="mod-item">
-    <div class="mod-text">Моды сервера для Forge 1.21.4</div>
-    <a href="Forge.rar" class="mods" download>Скачать</a>
-  </div>
-  <div class="mod-guide">
-    Моды не обязательны, но они сделают геймплей интереснее. В архиве находится Plasmo Voice для войса и Emotecraft для емоций. Вам нужно разархивировать архив, моды которые вы получите закинуть в папку "mods", которая находиться в коренной папке Minecraft. Должно получиться так: AppData\Roaming\.minecraft\mods.
-  </div>
-  <h1 class="mod-guide">Если у вас Tlauncher то нажимаете на кнопку как на скрине и попадает в корневую папку Minecraft:</h1>
-    <div class="img-flex">
-  <img src="guide.png" alt="Tlauncher" class="img-guide" >
-    </div>
-  <div class="button-wrapper">
-    <!-- нижний бордер -->
-      </div>
-
-</div>
 
 
+<script src="main.js"></script>
+<script>
+  document.querySelector('.nav-toggle')
+    .addEventListener('click', ()=> {
+      document.querySelector('.main-nav').classList.toggle('open');
+    });
+</script>
 </body>
 </html>

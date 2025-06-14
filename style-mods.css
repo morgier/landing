@@ -28,6 +28,11 @@ li {
     list-style-type: none;
 }
 /*=========Header=============================================*/
+
+header {
+  position:relative;
+  z-index: 100;
+}
 ._container {
  max-width: 1200px;
   width: 90%;
@@ -36,7 +41,6 @@ li {
 }
 
 .header_container {
-    position: relative;
     display: flex;
     justify-content: space-between;
     min-height: 90px;
@@ -61,13 +65,12 @@ li {
   cursor: pointer;
 }
 
+
 .main-nav {
   display: flex;
   gap: 30px;
   align-items: center;
 }
-
-
 
 .main-nav a {
   color: white;
@@ -111,52 +114,11 @@ font-family: Arial, Helvetica, sans-serif;
   border-bottom: 1px solid #E6E6E6;
   padding-bottom: 2px;
 }
-.button-wrapper2 {
-  
-  border-bottom: 1px solid #E6E6E6;
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
 
-.button-list {
- list-style: none;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
- align-items: stretch;
-  width: 100%; /* обязательно */
-  max-width: 1200px; 
-}
 
-.transparent-button {
-    display: inline-flex;          
-  justify-content: center;      
-  align-items: center;          
- width: 100%;
-  height: 100px; 
-  max-width: 1200px;                
-                  
 
-  background-color: rgba(255, 255, 255, 0.1);
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-  backdrop-filter: blur(5px);
- font-family: 'Libre Franklin', sans-serif;
-  font-size: 30px;
-}
 
-.transparent-button:hover {
-  background-color: rgba(255, 255, 255, 0.25);
-}
 
-.transparent-button i {
-  margin-right: 10px; /* отступ справа от иконки */
-  font-size: 30px;
-}
 /*=========Showcase2=============================================*/
 .showcase2 {
   display: flex;
@@ -166,7 +128,70 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 
+.mod-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
 
+/* Текст */
+.mod-text {
+  color: #ffffff;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 30px;
+ 
+}
+
+.mod-guide {
+color: #ffffff;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 20px;
+}
+
+.mod-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+
+/* Кнопка */
+.mods {
+  width: 350px; 
+  padding: 20px 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  backdrop-filter: blur(5px);
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  display: inline-block;
+}
+
+.mods:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.img-flex {
+  display: flex;
+  justify-content: center; /* по горизонтали */
+  align-items: center;     /* по вертикали */
+  height: 150px;   
+     
+}
+
+.img-guide{
+ 
+width: 500px;            /* или % от родителя (например, 80%) */
+  height: auto;            /* сохраняет пропорции */
+  border-radius: 10px;     /* скругление углов */
+  object-fit: cover; 
+}
 
 
 
@@ -180,7 +205,7 @@ font-family: Arial, Helvetica, sans-serif;
     display: block;
   }
 
-  .main-nav {
+   .main-nav {
     position: absolute;
     top: 100%;           /* сразу под шапкой */
     right: 0;
@@ -205,14 +230,21 @@ font-family: Arial, Helvetica, sans-serif;
    opacity: 1;
   }
  
+ 
   .mod-item {
     flex-direction: column; /* вертикально: текст, потом кнопка */
-    align-items: flex-start; /* выравниваем текст и кнопку по левому краю */
+    align-items: stretch; /* выравниваем текст и кнопку по левому краю */
+  }
+  .mod-links {
+    width: 100%;            /* Заставляем блок кнопок тянуться */
+    display: flex;
+    flex-direction: column; /* Если нужна одна под другой */
+    gap: 15px;
   }
 
   .mods {
     width: 100%; /* кнопка на всю ширину блока */
-    max-width: none;
+    
     font-size: 24px;
   }
 
@@ -228,26 +260,22 @@ font-family: Arial, Helvetica, sans-serif;
   border-bottom: 1px solid #E6E6E6;
   }
 
-  .transparent-button {
+  .mods {
            /* растягиваем кнопку на всю ширину контейнера */
     height: 70px;        /* чуть меньше высота */
     font-size: 22px;     /* уменьшаем размер шрифта */
   }
 
-  .button-list {
-    gap: 25px;           /* уменьшаем отступ между кнопками */
-  }
+
   
 }
 
 /* Дополнительная оптимизация для очень маленьких экранов <= 400px */
 @media (max-width: 400px) {
-  .transparent-button {
+  .mods {
     height: 70px;
     font-size: 22px;
   }
 
-  .transparent-button i {
-    font-size: 25px;
-  }
+
 }
