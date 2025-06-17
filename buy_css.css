@@ -6,7 +6,8 @@
 /*=========Body=============================================*/
 
 html, body {
-  height: 100%;
+   min-height: 100%;
+  height: auto;
   background-image: url('Minecraft_\ 1.21.4\ 17.06.2025\ 08_47_44.png');
   background-size: cover; /* или contain, если надо */
   background-repeat: no-repeat;
@@ -143,6 +144,7 @@ font-family: Arial, Helvetica, sans-serif;
   font-family: 'Libre Franklin', sans-serif;
   font-size: 25px;
    width: 900px;
+   width: 100%;
     padding-left: 15px;
    background-color: rgba(255, 255, 255, 0.1);
     color: white;
