@@ -1,0 +1,376 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*=========Body=============================================*/
+
+html, body {
+    min-height: 100%;
+  height: auto;
+  background-image: url('Minecraft_\ 1.21.4\ 17.06.2025\ 08_47_44.png');
+  background-size: cover; /* или contain, если надо */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* чтобы фон "приклеился" */
+   background-position: left center;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+li {
+    list-style-type: none;
+}
+
+._container {
+  background-color: rgba(119, 116, 116, 0.233);
+    transition: background-color 0.3s ease;
+     backdrop-filter: blur(1px);
+ max-width: 1500px;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 15px;  /* боковые отступы */
+  box-sizing: border-box;
+}
+/*=========Header=============================================*/
+
+header {
+  position:relative;
+  z-index: 100;
+}
+
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    min-height: 90px;
+    align-items: center;
+    border-bottom: solid 1px #E6E6E6;
+   
+}
+.header_logo {
+    
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: monospace;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+
+.main-nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: monospace;
+  padding: 8px 12px;
+  transition: color 0.2s;
+}
+
+.main-nav a:hover {
+  color: #ddd;
+}
+
+
+
+
+
+
+.tiktok{
+
+     font-size: 70px;
+    display: flex;
+    align-items: center
+
+}
+
+/*=========Showcase=============================================*/
+.button-wrapper {
+  
+  border-bottom: 1px solid #E6E6E6;
+  padding-bottom: 2px;
+}
+.row {
+    
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: white;
+ 
+    
+}
+
+.showcase {
+    width: 100%;
+  display: flex; 
+  flex-direction: column; 
+ 
+ 
+}
+
+.mag_card {
+   
+  
+  max-width: 1200px;
+
+
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+ align-items: center;
+  color: white;
+  font-family: 'Libre Franklin', sans-serif;
+   box-sizing: border-box;
+}
+
+
+.img_box img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  object-fit: cover;
+  margin: 0; /* убираем возможное автоцентрирование */
+  margin-top: 20px;
+  align-self: flex-start; /* если img_box flex, то тоже помогает */
+}
+
+
+
+
+
+
+.description {
+  padding-left:160px;
+  text-align: left; /* гарантирует выравнивание текста */
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 22px;
+   
+}
+
+.description2 {
+  padding-left: 15px;
+  text-align: left; /* гарантирует выравнивание текста */
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 25px;
+}
+
+
+.img_card {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    
+  
+}
+
+.comands {
+    width: 500px;
+    padding-left: 15px;
+    background-color: rgba(51, 49, 49, 0.534);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    text-decoration: none;
+
+}
+.buy-wrapper {
+  display: flex;
+  width: 100px;
+  padding-left: 50px;    /* сдвигает кнопку правее */
+}
+
+
+.button {
+ list-style: none;
+  padding: 0;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+ align-items: stretch;
+ 
+  max-width: 1500px; 
+  
+}
+
+.transparent-button {
+    display: inline-flex;          
+  justify-content: center;      
+  align-items: center;          
+  width: 300px;
+  height: 50px; 
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  backdrop-filter: blur(7px);
+ font-family: 'Libre Franklin', sans-serif;
+  font-size: 30px;
+}
+
+.transparent-button:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.transparent-button i {
+  margin-right: 10px; /* отступ справа от иконки */
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+/*=========Footer=============================================*/
+.footer {
+  background-color: rgba(20, 20, 20, 0.85);
+  backdrop-filter: blur(8px);
+  color: white;
+  padding: 30px 0;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+  margin-top: 60px;
+}
+
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.footer_logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.footer_links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer_links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer_links a:hover {
+  color: #aaa;
+}
+
+.footer_copy {
+  font-size: 12px;
+  color: #bbb;
+}
+
+
+
+
+@media (max-width: 768px){
+     .nav-toggle{
+    display: block;
+  }
+    .main-nav {
+    position: absolute;
+    top: 100%;           /* сразу под шапкой */
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 
+    max-height 0.4s ease,    /* анимация роста высоты */
+    opacity 0.3s ease 0.1s;
+  
+    z-index: 10;
+  }
+  .main-nav.open {
+   padding: 20px;
+   max-height: 400px;
+   opacity: 1;
+  }
+
+  .mag_card {
+    flex-direction: column;
+    align-items: left;
+    text-align: center;
+  }
+
+  .description {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 28px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .description2 {
+    padding-left: 0;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .comands {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+ .buy-wrapper {
+   
+    padding: 0 15px;
+    margin-top: 20px;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  .transparent-button {
+
+    width: 500px;
+    height: 80px;
+    font-size: 22px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .footer_container {
+    padding: 0 15px;
+  }
+}
+
+ 

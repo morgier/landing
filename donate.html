@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мои соцсети</title>
+  <link rel="stylesheet" href="donate_css.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="body">
+<!--=========Header==============================================================================-->            
+             <header >
+                <div class=" _container header_container">
+                    
+                    <a href="https://www.tiktok.com/@endorf1in?is_from_webapp=1&sender_device=pc" class="header_logo " >ENDORF1IN</a> 
+                    <button class="nav-toggle" aria-label="Открыть меню">
+                      ☰
+                    </button>               
+                    <nav class="main-nav">
+                         <a href="index.html">Главная</a>
+                         <a href="mods.html">Сервер</a> 
+                         <a href="donate.html">Магазин</a>                        
+                         <a href="https://www.tiktok.com/@endorf1in?is_from_webapp=1&sender_device=pc" class="tiktok"><i class="fab fa-tiktok"></i></a>
+                    </nav>
+                    
+                </div>
+            </header>
+<!--=========Showcase==============================================================================-->
+<div class="_container showcase">
+    <h1 class="h1_mag">Магазин</h1>
+    <div class="row">
+        <div class="mag_card">
+            <div class="img_box">
+                <img class="img_card" src="gold.jpg">
+            </div>
+            <div class="card_body">
+                <h3>Подписка Gold</h3>
+                <h2>От 60 грн</h2>
+            </div>
+            <div class="card_footer">
+                <a href="Gold.html" class="card_footer" >Подробнее</a>
+            </div>
+        </div>
+
+          <div class="mag_card">
+            <div class="img_box">
+                <img class="img_card" src="diamond.jpg">
+            </div>
+            <div class="card_body">
+                <h3>Подписка Diamond</h3>
+                <h2>От 150 грн</h2>
+            </div>
+            <div class="card_footer">
+                <a href="Diamond.html" class="card_footer" >Подробнее</a>
+            </div>
+        </div>
+
+         <div class="mag_card">
+            <div class="img_box">
+                <img class="img_card" src="scale.jpg">
+            </div>
+            <div class="card_body">
+                <h3>Изменение роста</h3>
+                <h2>От 60 грн</h2>
+            </div>
+            <div class="card_footer">
+                <a href="scale.html" class="card_footer" >Подробнее</a>
+            </div>
+        </div>
+
+        <div class="mag_card">
+            <div class="img_box">
+                <img class="img_card" src="razban.png">
+            </div>
+            <div class="card_body">
+                <h3>Разбан</h3>
+                <h2> 150 грн</h2>
+            </div>
+            <div class="card_footer">
+                <a href="buy.html" class="card_footer" >Оплатить</a>
+            </div>
+        </div>
+
+          
+
+         
+        </div>
+    </div>
+</div>
+
+<script src="main.js"></script>
+<script>
+  document.querySelector('.nav-toggle')
+    .addEventListener('click', ()=> {
+      document.querySelector('.main-nav').classList.toggle('open');
+    });
+</script>
+</body>
+<!--=========Footer==============================================================================-->
+<footer class="footer">
+  <div class="_container footer_container">
+    <div class="footer_logo">ENDORF1IN</div>
+    <div class="footer_links">
+      <a href="index.html">Главная</a>
+      <a href="mods.html">Сервер</a>
+      <a href="donate.html">Магазин</a>  
+      <a href="https://www.tiktok.com/@endorf1in?is_from_webapp=1&sender_device=pc" target="_blank">
+        <i class="fab fa-tiktok"></i> TikTok
+      </a>
+    </div>
+    <div class="footer_copy">
+      &copy; 2025 ENDORF1IN. Все права защищены.
+    </div>
+  </div>
+</footer>
+</html>

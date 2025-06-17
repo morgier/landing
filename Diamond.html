@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мои соцсети</title>
+  <link rel="stylesheet" href="diamond.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="body">
+<!--=========Header==============================================================================-->            
+             <header >
+                <div class=" _container header_container">
+                    
+                    <a href="https://www.tiktok.com/@endorf1in?is_from_webapp=1&sender_device=pc" class="header_logo " >ENDORF1IN</a> 
+                    <button class="nav-toggle" aria-label="Открыть меню">
+                      ☰
+                    </button>               
+                    <nav class="main-nav">
+                         <a href="index.html">Главная</a>
+                         <a href="mods.html">Сервер</a> 
+                         <a href="donate.html">Магазин</a>                        
+                         <a href="https://www.tiktok.com/@endorf1in?is_from_webapp=1&sender_device=pc" class="tiktok"><i class="fab fa-tiktok"></i></a>
+                    </nav>
+                    
+                </div>
+            </header>
+<!--=========Showcase==============================================================================-->
+<div class="_container">
+<div class="showcase">
+
+    <div class="row">
+        <div class="mag_card">
+            <div class="img_box">
+                <img class="img_card" src="diamond.jpg">
+            </div>
+            <div class="description">
+                <h2>Подписка Diamond на 30 дней</h2>
+                <h3>Скрытие себя с онлайн карты, изменение цвета ника, кастомизация персонажа и не только...</h3>
+            </div>
+            <div class="buy-wrapper">
+               <ul class="button">
+                <li><a href="buy.html" class="transparent-button">Купить</a></li>
+            </ul> 
+            </div>
+            
+        </div>
+      
+        
+        </div>
+        <div class="row">
+            <div class="description2">
+            <h3>Описание товара:</h3>
+            <h4>Подписка Diamond — это расширенная возможность поддержать проект Endorf1in и получить доступ к уникальным функциям кастомизации.
+               Пожертвования, сделанные через эту подписку, помогают обеспечивать стабильную работу сервера и его развитие. </h4>
+            <h4>Что даёт подписка?</h4>
+            <h4>В подписку входят все команды подписки Gold. Игроку станет доступны команды для скрытия себя с онлайн карты, изменение цвета ника, кастомизация персонажа
+               (Питомцы, эффекты, эмоции, превращение в мобов), открытие верстака и эндер сундука через команды, возможность поставить префикс в чате и в табе, голубой ник в табе. Так же покупая подписку вы поддерживаете сервер.</h4>
+            <div class="comands">
+                <h4>Команды:</h4>
+                <ul>
+                    <li>/map hide (Скрыть себя с онлайн карты).</li>
+                    <li>/map show (Вернуть себя на онлайн карту).</li>
+                    <li>/nickcolor (Изменить цвет ника или поставить градиент).</li>
+                    <li>/uc menu (Кастомизация. Питомцы, эффекты, эмоции, превращение в мобов).</li>
+                    <li>/ec (Открыть эндер сундук).</li> 
+                    <li>/cratf (Открыть верстак).</li>
+                    <li>/setprefix (Поставить префикс в табе, чате и над головой).</li> 
+                    <li>/setsuffix  (Поставить суффикс в табе, чате и над головой).</li>             
+                </ul>
+            </div>
+            <h4>Обратите внимание: подписки суммируются. Если вы приобрели подписку на месяц дважды, она будет действовать два месяца.
+               Продлить подписку можно в любое время.</h4>
+            <h4>Один месяц — это 30 календарных дней с момента покупки.</h4>
+            <h4>Покупка осуществляется переводом на карту или пополнением банки "Monobank"</h4>
+            
+            
+        </div>
+        </div>        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<script src="main.js"></script>
+<script>
+  document.querySelector('.nav-toggle')
+    .addEventListener('click', ()=> {
+      document.querySelector('.main-nav').classList.toggle('open');
+    });
+</script>
+</body>
+<!--=========Footer==============================================================================-->
+<footer class="footer">
+  <div class="_container footer_container">
+    <div class="footer_logo">ENDORF1IN</div>
+    <div class="footer_links">
+      <a href="index.html">Главная</a>
+      <a href="mods.html">Сервер</a>
+      <a href="donate.html">Магазин</a>  
+      <a href="https://www.tiktok.com/@endorf1in?is_from_webapp=1&sender_device=pc" target="_blank">
+        <i class="fab fa-tiktok"></i> TikTok
+      </a>
+    </div>
+    <div class="footer_copy">
+      &copy; 2025 ENDORF1IN. Все права защищены.
+    </div>
+  </div>
+</footer>
+</html>
